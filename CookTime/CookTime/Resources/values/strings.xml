@@ -1,4 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CookTime</string>
     <string name="action_settings">Settings</string>
+	<string name="singin.singinButton.text"> Sing In </string>
+	<string name="singin.singupButton.text"> Sing Up </string>
+	<string name="singin.texName.hint">Email</string>
+	<string name="singin.texPassword.hint">Password</string>
+	<string name="title_home">Homeht</string>
+	<string name="title_dashboard">Dashboard</string>
+	<string name="title_notifications">Notifications</string>
 </resources>
