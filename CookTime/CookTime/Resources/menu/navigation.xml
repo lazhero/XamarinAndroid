@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+	    android:id="@+id/ic_home"
+	    android:icon="@mipmap/ic_home"
+		android:showAsAction="always"
+		android:title="xd"/>
+
+	<item
+        android:id="@+id/ic_notifications"
+        android:icon="@mipmap/ic_notifications"
+		android:showAsAction="always" 
+		android:title="xd"/>
+	<item
+		android:id="@+id/ic_profile"
+		android:icon="@mipmap/ic_profile"
+		android:showAsAction="always"
+		android:title="xd"/>
+	<item
+        android:id="@+id/ic_add"
+        android:icon="@mipmap/ic_add"
+		android:showAsAction="always" 
+		android:title="xd"/>
+	
+	<item
+        android:id="@+id/ic_recomendations"
+        android:icon="@mipmap/ic_recomendations"
+		android:showAsAction="always"
+		android:title="xd"/>
+
+
+</menu>

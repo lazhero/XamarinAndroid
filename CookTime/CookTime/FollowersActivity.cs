@@ -12,17 +12,15 @@ using Android.Widget;
 
 namespace CookTime
 {
-    [Activity(Label = "MainActivity")]
-    public class MainActivity : Activity
+    [Activity(Label = "FollowersActivity")]
+    public class FollowersActivity : Activity
     {
-    
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.feed);
-        
+            SetContentView(Resource.Layout.Followers);
+
             // Create your application here
-       
         }
     }
 }
