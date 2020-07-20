@@ -7,7 +7,7 @@ using Android.Content;
 
 namespace CookTime
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_main", Theme = "@style/AppTheme", MainLauncher = true )]
     public class SingInActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -33,6 +33,7 @@ namespace CookTime
         {
             var intent = new Intent(this, typeof(newFeed));
             StartActivity(intent);
+            Finish();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

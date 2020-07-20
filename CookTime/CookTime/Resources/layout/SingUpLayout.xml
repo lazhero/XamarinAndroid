@@ -1,11 +1,13 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="30dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/Fondo">
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,37 +21,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
-            android:text="Create a CookTime Free Account" />
+            android:text="@string/singup.createAccount.text" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/singup.Name.hint"
+            android:id="@+id/UserName" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/singup.LastName.hint"
+            android:id="@+id/UserLastName" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/singup.Age.hint"
+            android:id="@+id/UserAge" />
         <EditText
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editText1"
-            android:text="Email adress" />
+            android:hint="@string/singup.textEmail.hint" />
         <EditText
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editText2"
-            android:text="Create password" />
-        <Button
-            android:text="Get Started"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button1" />
+            android:hint="@string/singup.texCreatePassword.hint" />
         <TextView
-            android:text="By clicking 'Get started' i agree to the terms of service"
+            android:text="@string/singup.textAgree.text"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView3" />
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
+        <Button
+            android:text="@string/singup.buttonAgree.text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:background="@drawable/buttoncustom"
+            android:id="@+id/button1" />
+
+
         <TextView
-            android:text="Already hace an account?"
+            android:text="@string/singup.textHaveAccount.text"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,9 +75,10 @@
             android:layout_marginBottom="18.0dp"
             android:layout_marginTop="0.0dp"/>
         <Button
-            android:text="Sign in"
+            android:text="@string/singin.singinButton.text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/buttoncustom"
             android:id="@+id/buttonSingIn2"/>
     </LinearLayout>
 </RelativeLayout>

@@ -5,9 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="30dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
+    android:layout_height="match_parent"
+    android:background="@mipmap/Fondo">
 
     <LinearLayout
         android:layout_centerInParent="true"
@@ -15,20 +14,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+
         <TextView
             android:layout_marginTop="15dp"
             android:id="@+id/xd"
-            android:text="Sing in to you CookTime Account"
+            android:text="@string/singin.singin.text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            />
+
         <EditText
             android:inputType="textPostalAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtName"
+  
             android:hint="@string/singin.texName.hint" />
+
         <EditText
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtPassword"
@@ -39,22 +43,24 @@
             android:layout_centerInParent="true"
             android:layout_width="280.0dp"
             android:layout_height="55.0dp"
+            android:background="@drawable/buttoncustom"
             android:text="@string/singin.singinButton.text"/>
-        
+
 
         <TextView
             android:layout_marginTop="15dp"
             android:id="@+id/displayNameText"
-            android:text="Dont' have an account?"
+            android:text="@string/singup.Donthaveaccount.text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="31.0dp"/>
+
         <Button
             android:id="@+id/singupButton"
-            android:layout_centerInParent="true"
             android:text="@string/singin.singupButton.text"
-            android:layout_width="276.0dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="0.0dp" />
+            android:layout_centerInParent="true"
+            android:layout_width="280.0dp"
+            android:layout_height="55.0dp"
+            android:background="@drawable/buttoncustom" />
 
 
     </LinearLayout>
