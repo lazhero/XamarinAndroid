@@ -6,7 +6,19 @@
 	<string name="singin.singupButton.text"> Sing Up </string>
 	<string name="singin.texName.hint">Email</string>
 	<string name="singin.texPassword.hint">Password</string>
-	<string name="title_home">Homeht</string>
+	<string name="title_home">Home</string>
 	<string name="title_dashboard">Dashboard</string>
 	<string name="title_notifications">Notifications</string>
+	<string name="singup.texCreatePassword.hint">Create Password</string>
+	<string name="singup.textEmail.hint">Email adress</string>
+	<string name="singup.textHaveAccount.text">	Already have an account?</string>
+	<string name="singup.textAgree.text"> By clicking (Get started) i agree to the terms of service </string>
+	<string name="singup.buttonAgree.text">Get Started </string>
+	<string name="singup.createAccount.text">	Create a CookTime Free Account</string>
+	<string name="singup.Name.hint"> Name </string>
+	<string name="singup.LastName.hint">Last Name </string>
+	<string name="singup.Age.hint">Age</string>
+	<string name="singup.Donthaveaccount.text"> Dont' have an account? </string>
+	<string name="singin.singin.text"> 	Sing in to you CookTime Account </string>
+
 </resources>

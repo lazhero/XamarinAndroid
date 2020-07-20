@@ -35,24 +35,24 @@ namespace CookTime
             switch (item.ItemId)
             {
                 case Resource.Id.ic_home:
-                    var intent = new Intent(this, typeof(newFeed));
-                    StartActivity(intent);
+                    StartActivity(typeof(newFeed));
+                    Finish();
                     break;
                 case Resource.Id.ic_recomendations:
-                    var intent2 = new Intent(this, typeof(RecomendationsActivity));
-                    StartActivity(intent2);
+                    StartActivity(typeof(RecomendationsActivity));
+                    Finish();
                     break;
                 case Resource.Id.ic_notifications:
-                    var intent1 = new Intent(this, typeof(NotificationsActivity));
-                    StartActivity(intent1);
+                    StartActivity(typeof(NotificationsActivity));
+                    Finish();
                     break;
                 case Resource.Id.ic_profile:
-                    var intent3 = new Intent(this, typeof(ProfileActivity));
-                    StartActivity(intent3);
+                    StartActivity(typeof(ProfileActivity));
+                    Finish();
                     break;
                 case Resource.Id.ic_add:
-                    var intent4 = new Intent(this, typeof(ShareRecipeActivity));
-                    StartActivity(intent4);
+                    StartActivity(typeof(ShareRecipeActivity));
+                    Finish();
                     break;
 
 
