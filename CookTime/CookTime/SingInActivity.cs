@@ -15,13 +15,13 @@ namespace CookTime
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resourceev
-            //SetContentView(Resource.Layout.SingInLayout);
-            SetContentView(Resource.Layout.OrderView);
+            SetContentView(Resource.Layout.SingInLayout);
+            //SetContentView(Resource.Layout.OrderView);
 
-            //Button buttonSingIn = FindViewById<Button>(Resource.Id.singinButton);
-            //Button buttonSingUp = FindViewById<Button>(Resource.Id.singupButton);
-            //buttonSingIn.Click += ButtonSingIn_Click;
-            //buttonSingUp.Click += ButtonSingUp_Click;
+            Button buttonSingIn = FindViewById<Button>(Resource.Id.singinButton);
+            Button buttonSingUp = FindViewById<Button>(Resource.Id.singupButton);
+            buttonSingIn.Click += ButtonSingIn_Click;
+            buttonSingUp.Click += ButtonSingUp_Click;
         }
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
