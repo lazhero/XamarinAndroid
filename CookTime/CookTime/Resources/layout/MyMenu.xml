@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+        android:padding="30dp"
     android:layout_height="match_parent">
+
+    <TextView
+        android:text="Choose how to order them"
+              android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1" />
+    <Button
+        android:id="@+id/ButtonDate"
+               android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        android:text="Publication date"/>
+    <Button
+        android:id="@+id/ButtonPuntuaction"
+
+        android:layout_width="match_parent"
+               android:padding="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        android:text="Punctuation"/>
+    <Button
+               android:padding="30dp"
+        android:id="@+id/ButtonDifficultyn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        android:text="difficulty"/>
 
 </LinearLayout>

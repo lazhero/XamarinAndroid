@@ -65,9 +65,14 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProfilePicture.cs" />
+    <Compile Include="BoardBusinessActivity.cs" />
+    <Compile Include="BoardRecipe.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MyBusinessActivity.cs" />
+    <Compile Include="MyMenuActivity.cs" />
     <Compile Include="NotificationsActivity.cs" />
     <Compile Include="ProfileActivity.cs" />
     <Compile Include="RecomendationsActivity.cs" />
@@ -158,11 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\NotificationsLayout.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\feed.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -291,6 +291,36 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MyMenu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\BoardBusiness.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\BoardRecipe.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\AddProfilePicture.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MyBusiness.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\OrderView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
