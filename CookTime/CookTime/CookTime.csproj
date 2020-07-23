@@ -70,6 +70,7 @@
     <Compile Include="BoardRecipe.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
+    <Compile Include="InitActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MyBusinessActivity.cs" />
     <Compile Include="MyMenuActivity.cs" />
@@ -314,6 +315,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MyBusiness.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\InitLayout.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
