@@ -44,6 +44,7 @@ namespace CookTime
             webClient.QueryString.Add("Password", txt_password.Text);
             string result = webClient.DownloadString("http://192.168.1.7:9080/proving");
             Console.WriteLine(result.Length);
+            Console.WriteLine("xd");
 
             if (result.Equals(""))
                 return false;
