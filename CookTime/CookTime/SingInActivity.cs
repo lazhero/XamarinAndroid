@@ -27,7 +27,7 @@ namespace CookTime
             var txtNombre = FindViewById<EditText>(Resource.Id.txtName);
             var txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
 
-            Console.Write(txtPassword.Text);
+            
         }
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
@@ -38,8 +38,7 @@ namespace CookTime
 
         private void ButtonSingIn_Click(object sender, System.EventArgs e)
         {
-            var intent = new Intent(this, typeof(newFeed));
-            StartActivity(intent);
+            StartActivity(typeof(InitActivity));
             Finish();
 
         }
