@@ -29,11 +29,9 @@ namespace CookTime
             Button buttonSingUp = FindViewById<Button>(Resource.Id.singupButton);
             buttonSingUp.Click += ButtonSingUp_Click;
 
-            var txtNombre = FindViewById<EditText>(Resource.Id.txtName);
-            var txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
 
-            Console.Write(txtPassword.Text);
 
+            
         }
 
         private bool verification()
@@ -44,7 +42,8 @@ namespace CookTime
             WebClient webClient = new WebClient();
             webClient.QueryString.Add("UserName", txt_email.Text);
             webClient.QueryString.Add("Password", txt_password.Text);
-            string result = webClient.DownloadString("http://192.168.1.7:9080/logs");
+            string result = webClient.DownloadString("http://192.168.1.7:9080/proving");
+            Console.WriteLine(result.Length);
 
             if (result.Equals(""))
                 return false;
@@ -55,7 +54,7 @@ namespace CookTime
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
         {
-            if (verification())
+            if (verification() )
             {
 
             }
@@ -70,11 +69,17 @@ namespace CookTime
 
         private void ButtonSingIn_Click(object sender, System.EventArgs e)
         {
-            if (verification())
+            Console.WriteLine("Afuera del if");
+            if (verification() )
             {
-                var intent = new Intent(this, typeof(newFeed));
+                Console.WriteLine("entro al if");
+                var intent = new Intent(this, typeof(InitActivity));
                 StartActivity(intent);
                 Finish();
+            } 
+            else
+            {
+                Console.WriteLine("Entro al else");
             }
 
 
