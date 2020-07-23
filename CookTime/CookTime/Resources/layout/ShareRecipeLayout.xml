@@ -1,47 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECE2C6">
+    android:fillViewport="true">
 
-     <Toolbar
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="#ECE2C6">
+        
+    <Toolbar
         android:minHeight="?android:attr/actionBarSize"
         android:background="?android:attr/colorPrimary"
         android:minWidth="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar1"/>
-    <TextView
-        android:text="Share Recipe"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="60.5dp"
-        android:id="@+id/textView2" />
-    <TextView
-        android:text="User Name"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
-    <EditText
-        android:inputType="textMultiLine"
-        android:layout_width="match_parent"
-        android:layout_height="319.5dp"
-        android:id="@+id/editText1"
-        android:text="Wich recipe is on your mind?" />
-    <Button
-        android:text="Add image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2" />
-    <Button
-        android:text="Post"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        <TextView
+            android:text="Share your recipe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:hint="Name of you recipe" />
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiAutoCompleteTextView1"
+            android:hint="Author" />
+        <TextView
+            android:text="Type of you recipe "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        <RadioGroup
+            android:minWidth="20px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="BreakFast"
+                android:id="@+id/radioButton1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:id="@+id/radioButton2" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:id="@+id/radioButton3" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snack"
+                android:id="@+id/radioButton4" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brunch"
+                android:id="@+id/radioButton5" />
+        </RadioGroup>
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="for how many people?" />
+        <TextView
+            android:text="Recipe Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup2">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Short Time"
+                android:id="@+id/radioButton6" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Middle Time"
+                android:id="@+id/radioButton7" />
+            <RadioButton
+                android:text="Long Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton9" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longer Time"
+                android:id="@+id/radioButton8" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup3">
+                <TextView
+                    android:text="Recipe Roll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4" />
+                <RadioButton
+                    android:text="Appetizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton16" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Entry"
+                    android:id="@+id/radioButton10" />
+                <RadioButton
+                    android:text="MainCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton15" />
+                <RadioButton
+                    android:text="Alcoholic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton14" />
+                <RadioButton
+                    android:text="Cold Drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton13" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warm Drink"
+                    android:id="@+id/radioButton11" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dessert"
+                    android:id="@+id/radioButton12" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:hint="Difficulty 0-10" />
+                <TextView
+                    android:text="Diet Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" />
+                <RadioGroup
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup4">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Vegetarian"
+                        android:id="@+id/radioButton17" />
+                    <RadioButton
+                        android:text="Vegan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton22" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kosher"
+                        android:id="@+id/radioButton18" />
+                    <RadioButton
+                        android:text="Celiac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton21" />
+                    <RadioButton
+                        android:text="Keto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton20" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carnivorous"
+                        android:id="@+id/radioButton19" />
+                    <Button
+                        android:text="Add Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button1" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText4"
+                        android:hint="Ingredients" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:hint="Steps" />
+                </RadioGroup>
+            </RadioGroup>
+        </RadioGroup>
+
+
+
+
 
 
 </LinearLayout>
+
+
+
+</ScrollView>
