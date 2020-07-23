@@ -27,7 +27,7 @@
         android:minHeight="25px"
         android:id="@+id/textView1" />
     <TextView
-        android:text="@User Name"
+        android:text="User Name"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

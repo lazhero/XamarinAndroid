@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using Android.Content;
+using System;
 
 namespace CookTime
 {
@@ -22,6 +23,11 @@ namespace CookTime
             Button buttonSingUp = FindViewById<Button>(Resource.Id.singupButton);
             buttonSingIn.Click += ButtonSingIn_Click;
             buttonSingUp.Click += ButtonSingUp_Click;
+
+            var txtNombre = FindViewById<EditText>(Resource.Id.txtName);
+            var txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
+
+            Console.Write(txtPassword.Text);
         }
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
@@ -35,6 +41,7 @@ namespace CookTime
             var intent = new Intent(this, typeof(newFeed));
             StartActivity(intent);
             Finish();
+
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
