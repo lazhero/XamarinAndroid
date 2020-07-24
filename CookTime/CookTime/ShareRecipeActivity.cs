@@ -17,10 +17,10 @@ namespace CookTime
     {
 
         Toolbar toolbar;
-        private static string TypeRecipe = "xd";
+        private static string TypeRecipe = "";
         private static string TimeRecipe = "";
         private static string RollRecipe = "";
-        private static string DietType = "xd";
+        private static string DietType = "";
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -99,95 +99,103 @@ namespace CookTime
             CarnivorousB.Click += CarnivorousB_Click;
 
 
-
+            Button BPost = FindViewById<Button>(Resource.Id.buttonPost);
+            BPost.Click += BPost_Click;
+            
 
 
             // Create your application here
         }
 
+        private void BPost_Click(object sender, EventArgs e)
+        {
+            ShareRecipe();
+        }
+
         private void CarnivorousB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Carinovorous";
         }
 
         private void CeliacB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Celiac";
         }
 
         private void KetoB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Keto";
         }
 
         private void KosherB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Kosher";
         }
 
         private void VeganB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Vegan";
         }
 
         private void VegetarianB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfDiet = "Cegetarian";
         }
 
         private void DesserB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "Dessert";
+
         }
 
         private void WarmDrinkB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "WarmDrink";
         }
 
         private void ColdDrinkB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "ColdDrink";
         }
 
         private void AlcoholicB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "AlcoholicDrink";
         }
 
         private void MainCourseB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "MainCourse";
         }
 
         private void EntryB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "Entry";
         }
 
         private void AppetizerB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            RollOfRecipe = "Appetizer";
         }
 
         private void LongerTimeB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TimeOfRecipe = "LongetTime";
         }
 
         private void LongTimeB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TimeOfRecipe = "LongTime";
         }
 
         private void MiddleTimeB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TimeOfRecipe = "MiddleTime";
         }
 
         private void ShortTimeB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TimeOfRecipe = "ShortTime";
         }
 
         private void BrunchB_Click(object sender, EventArgs e)
@@ -197,23 +205,32 @@ namespace CookTime
 
         private void SnackB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfRecipe = "Snack";
         }
 
         private void LunchB_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("HOLI"+TypeOfRecipe);
+            TypeOfRecipe = "Lunch";
         }
     
 
         private void DinnerB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfRecipe = "Dinner";
         }
 
         private void BreakFastB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfRecipe = "BreakFast";
+        }
+
+        private void ShareRecipe()
+        {
+            API api = new API();
+            string[] arr = new string[2];
+            arr[0] = "xd";
+            arr[1] = "Keto";
+            string Ap = api.connect("RecipeGetter", "a","a" ,"Lunch", "Entry","LongerTime",arr,arr,arr,"2","5");
         }
 
 
