@@ -10,7 +10,7 @@
 	<string name="title_dashboard">Dashboard</string>
 	<string name="title_notifications">Notifications</string>
 	<string name="singup.texCreatePassword.hint">Create Password</string>
-	<string name="singup.textEmail.hint">Email adress</string>
+	<string name="singup.textEmail.hint">User Name</string>
 	<string name="singup.textHaveAccount.text">	Already have an account?</string>
 	<string name="singup.textAgree.text"> By clicking (Get started) i agree to the terms of service </string>
 	<string name="singup.buttonAgree.text">Get Started </string>

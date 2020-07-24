@@ -56,8 +56,9 @@ namespace CookTime
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
         {
+
   
-            var intent = new Intent(this, typeof(SingUpActivity));
+             var intent = new Intent(this, typeof(SingUpActivity));
              StartActivity(intent);
            
 
