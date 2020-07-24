@@ -41,6 +41,8 @@ namespace CookTime
 
             API api = new API();
             string xd = api.connect("proving", txt_email.Text, txt_password.Text);
+            Console.WriteLine(txt_email);
+            
 
 
             Console.WriteLine(xd.Length);
@@ -54,16 +56,10 @@ namespace CookTime
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
         {
-            if (verification() )
-            {
-
-            }
-            else
-            {
-                var intent = new Intent(this, typeof(SingUpActivity));
-                StartActivity(intent);
-            }
-
+  
+            var intent = new Intent(this, typeof(SingUpActivity));
+             StartActivity(intent);
+           
 
         }
 
