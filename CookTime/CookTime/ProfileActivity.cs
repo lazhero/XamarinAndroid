@@ -22,10 +22,15 @@ namespace CookTime
             SetContentView(Resource.Layout.Profile);
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
             SetActionBar(toolbar);
+
+            TextView txt_userName = FindViewById<TextView>(Resource.Id.textView2);
+
             Button buttonFollowing = FindViewById<Button>(Resource.Id.buttonFollowing);
+            buttonFollowing.Click += ButtonFollowing_Click;
+
             Button buttonFollowers = FindViewById<Button>(Resource.Id.buttonFollowers);
             buttonFollowers.Click += ButtonFollowers_Click;
-            buttonFollowing.Click += ButtonFollowing_Click;
+
 
 
             // Create your application here

@@ -39,14 +39,13 @@ namespace CookTime
             EditText txt_email = FindViewById<EditText>(Resource.Id.txtName);
             EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
 
-            WebClient webClient = new WebClient();
-            webClient.QueryString.Add("UserName", txt_email.Text);
-            webClient.QueryString.Add("Password", txt_password.Text);
-            string result = webClient.DownloadString("http://192.168.1.7:9080/proving");
-            Console.WriteLine(result.Length);
-            Console.WriteLine("xd");
+            API api = new API();
+            string xd = api.connect("proving", txt_email.Text, txt_password.Text);
 
-            if (result.Equals(""))
+
+            Console.WriteLine(xd.Length);
+
+            if (xd.Equals(""))
                 return false;
             else
                 return true;

@@ -68,6 +68,7 @@
     <Compile Include="AddProfilePicture.cs" />
     <Compile Include="BoardBusinessActivity.cs" />
     <Compile Include="BoardRecipe.cs" />
+    <Compile Include="API.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
     <Compile Include="InitActivity.cs" />
