@@ -15,6 +15,11 @@ namespace CookTime
     [Activity(Label = "CookTime")]
     public class newFeed : Activity
     {
+
+        ListView list_posts;
+
+
+
         Toolbar toolbar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,6 +27,16 @@ namespace CookTime
             SetContentView(Resource.Layout.newFeed);
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
             SetActionBar(toolbar);
+
+            list_posts = FindViewById<ListView>(Resource.Id.list_posts);
+            List<string> xd = new List<string>();
+            xd.Add("Elote");
+            xd.Add("Papa");
+            xd.Add("Yuca");
+
+            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, xd);
+            list_posts.Adapter = adapter;
+
 
             // Create your application here
         }
