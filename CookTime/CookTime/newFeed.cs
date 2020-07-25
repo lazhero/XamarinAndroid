@@ -38,8 +38,15 @@ namespace CookTime
             list_posts.Adapter = adapter;
 
 
-            // Create your application here
+            list_posts.Click += postClick;
+
         }
+
+        private void postClick(object sender, EventArgs e)
+        {
+            Console.WriteLine("hola");
+        }
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.navigation, menu);
