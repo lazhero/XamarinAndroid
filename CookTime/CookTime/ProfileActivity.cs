@@ -39,8 +39,8 @@ namespace CookTime
 
         private void ButtonAdmin_Click(object sender, EventArgs e)
         {
-            //StartActivity(typeof(administration));
-            CreateCompany();
+            StartActivity(typeof(administration));
+          
             
         }
 

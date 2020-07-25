@@ -36,17 +36,42 @@
         android:layout_height="wrap_content"
         android:id="@+id/editCompanyNumber"
         android:hint="numero de contacto" />
-    <EditText
-        android:inputType="textEmailAddress"
+    <TextView
+        android:text="Add you schedule"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTimeAttention"
-        android:hint="Horario de atencion" />
+        android:id="@+id/textView2" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberInitHour"
+        android:hint="Init hour"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumebrInitMinute"
+        android:hint="Init Minute"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberFinishHour"
+        android:hint="Finish Hour"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberFinishMinute" 
+        android:hint="Finish Minute"/>
+
     <Button
         android:text="Create Company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2" />
+        android:id="@+id/buttoncreatecompany" />
 
 
 </LinearLayout>
