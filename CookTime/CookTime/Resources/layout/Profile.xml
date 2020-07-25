@@ -12,44 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar1"/>
-    <SearchView
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchView1" />
+
     <TextView
         android:text="Profile"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:id="@+id/textView1" />
-    <TextView
-        android:text="User Name"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
-    <TextView
-        android:text="email@.com"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
-    <TextView
-        android:text="Workplace"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4" />
-    <TextView
-        android:text="Speciality"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5" />
+    <Button
+        android:text="Administration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonadministration" />
     <Button
         android:text="Following"
         android:layout_width="match_parent"
@@ -60,12 +34,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonFollowers" />
-    <Button
-        android:text="My Menus"
+    <TextView
+        android:text="Select how you want to order your menu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3" />
-    <LinearLayout 
+        android:id="@+id/textselect" />
+    <LinearLayout
         android:id="@+id/menuLinearLayout"
         android:layout_below="@+id/midTableLayout"
         android:layout_width="fill_parent"
@@ -74,13 +49,13 @@
         android:weightSum="3">
 
         <Button
-            android:id="@+id/homeButton"
+            android:id="@+id/DifficultyButton"
             android:layout_width="105.0dp"
             android:layout_height="60.0dp"
             android:text="Difficulty"
         />
         <Button
-            android:id="@+id/estadoButton"
+            android:id="@+id/PunctuationButton"
             android:text="Punctuation"
             android:layout_width="130.0dp"
             android:layout_height="60.0dp"/>
@@ -88,11 +63,11 @@
             android:layout_width="105.0dp"
             android:layout_height="60.0dp"
             android:text="Date"
-            android:id="@+id/noticiasButton"/>
-      
+            android:id="@+id/DateButton"/>
 
 
-     </LinearLayout>
+
+    </LinearLayout>
 
 
 

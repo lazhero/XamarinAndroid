@@ -16,7 +16,7 @@ namespace CookTime
     class API
     {
         WebClient webClient = new WebClient();
-        private string site = "http://192.168.1.7:9080/";
+        private string site = "http://192.168.8.102:9080/";
 
         public string connect(string request, string UserName, string Password)
         {
@@ -76,7 +76,23 @@ namespace CookTime
             Console.Write("HOLA" + result);
             return result;
         }
+        public string connecta(string request, string CompanyName, string InitHour , string InitMinute, string FinalHour, string FinalMinute,string UserName)
+        {
 
+
+            webClient.QueryString.Add("CompanyName", CompanyName);
+            webClient.QueryString.Add("InitHour", InitHour);
+            webClient.QueryString.Add("InitMinute", InitMinute);
+            webClient.QueryString.Add("FinalHour", FinalHour);
+            webClient.QueryString.Add("FinalMinute", FinalMinute);
+            webClient.QueryString.Add("UserName", UserName);
+
+            Console.WriteLine();
+
+            String result = webClient.DownloadString(site + request);
+            Console.Write("HOLA" + result);
+            return result;
+        }
 
 
     }

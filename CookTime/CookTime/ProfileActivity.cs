@@ -31,9 +31,17 @@ namespace CookTime
             Button buttonFollowers = FindViewById<Button>(Resource.Id.buttonFollowers);
             buttonFollowers.Click += ButtonFollowers_Click;
 
-
+            Button buttonAdmin = FindViewById<Button>(Resource.Id.buttonadministration);
+            buttonAdmin.Click += ButtonAdmin_Click;
 
             // Create your application here
+        }
+
+        private void ButtonAdmin_Click(object sender, EventArgs e)
+        {
+            //StartActivity(typeof(administration));
+            CreateCompany();
+            
         }
 
         private void ButtonFollowing_Click(object sender, EventArgs e)
@@ -54,6 +62,12 @@ namespace CookTime
         {
             MenuInflater.Inflate(Resource.Menu.navigation, menu);
             return base.OnCreateOptionsMenu(menu);
+        }
+
+        private void CreateCompany()
+        {
+            API api = new API();
+            string Ap = api.connecta("Company", "unaa", "2", "2", "2", "2",  "a");
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {

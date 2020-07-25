@@ -65,6 +65,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administration.cs" />
     <Compile Include="API.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
@@ -297,6 +298,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\InitLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\administration.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
