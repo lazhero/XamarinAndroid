@@ -16,7 +16,7 @@ namespace CookTime
     class API
     {
         WebClient webClient = new WebClient();
-        private string site = "http://192.168.8.102:9080/";
+        private string site = "http://192.168.1.7:9080/";
 
         public string connect(string request, string UserName, string Password)
         {
