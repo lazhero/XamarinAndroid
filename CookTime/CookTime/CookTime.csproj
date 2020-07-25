@@ -71,6 +71,7 @@
     <Compile Include="InitActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NotificationsActivity.cs" />
+    <Compile Include="PostActivity.cs" />
     <Compile Include="ProfileActivity.cs" />
     <Compile Include="RecomendationsActivity.cs" />
     <Compile Include="ShareRecipeActivity.cs" />

@@ -37,9 +37,20 @@ namespace CookTime
             var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, xd);
             list_posts.Adapter = adapter;
 
+            list_posts.ItemClick += (s, e) =>
+            {
+                toPost();
+            };
+
 
             // Create your application here
         }
+
+        private void toPost()
+        {
+
+        }
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.navigation, menu);
