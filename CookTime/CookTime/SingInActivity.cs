@@ -12,6 +12,9 @@ namespace CookTime
     [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_main", Theme = "@style/AppTheme", MainLauncher = true )]
     public class SingInActivity : AppCompatActivity
     {
+        public static string UserName;
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -19,9 +22,6 @@ namespace CookTime
             // Set our view from the "main" layout resourceev
             SetContentView(Resource.Layout.SingInLayout);
             //SetContentView(Resource.Layout.OrderView);
-
-            EditText txt_email = FindViewById<EditText>(Resource.Id.txtName);
-            EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
 
             Button buttonSingIn = FindViewById<Button>(Resource.Id.singinButton);
             buttonSingIn.Click += ButtonSingIn_Click;
@@ -36,15 +36,15 @@ namespace CookTime
 
         private bool verification()
         {
-            EditText txt_email = FindViewById<EditText>(Resource.Id.txtName);
+            EditText txt_userName = FindViewById<EditText>(Resource.Id.txtName);
             EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
 
             API api = new API();
-            string xd = api.connect("proving", txt_email.Text, txt_password.Text);
-            Console.WriteLine(txt_email);
+            string xd = api.connect("proving", txt_userName.Text, txt_password.Text);
+            Console.WriteLine(txt_userName);
+
+
             
-
-
             Console.WriteLine(xd.Length);
 
             if (xd.Equals(""))
@@ -56,12 +56,8 @@ namespace CookTime
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
         {
-
-  
              var intent = new Intent(this, typeof(SingUpActivity));
              StartActivity(intent);
-           
-
         }
 
         private void ButtonSingIn_Click(object sender, System.EventArgs e)

@@ -69,6 +69,9 @@
     <Compile Include="BoardBusinessActivity.cs" />
     <Compile Include="BoardRecipe.cs" />
     <Compile Include="API.cs" />
+    <Compile Include="JsonToObject.cs" />
+    <Compile Include="MyMenu.cs" />
+    <Compile Include="MyUsers.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
     <Compile Include="InitActivity.cs" />
@@ -77,6 +80,7 @@
     <Compile Include="MyMenuActivity.cs" />
     <Compile Include="NotificationsActivity.cs" />
     <Compile Include="ProfileActivity.cs" />
+    <Compile Include="ProfileStructure.cs" />
     <Compile Include="RecomendationsActivity.cs" />
     <Compile Include="ShareRecipeActivity.cs" />
     <Compile Include="SingInActivity.cs" />
