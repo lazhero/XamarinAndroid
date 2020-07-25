@@ -38,7 +38,7 @@ namespace CookTime
             list_posts.Adapter = adapter;
 
 
-            list_posts.Click += postClick;
+            
 
         }
 
