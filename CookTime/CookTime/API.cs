@@ -45,6 +45,38 @@ namespace CookTime
             return result;
         }
 
+        public string connect(string request, string Author, string RecipeName, string RecipeKind, string RecipeRoll, string RecipeTime,string[] DietType,string[] Steps, string[] Ingredients, string Amount,string Difficulty)
+        {
+            Console.Write("iniciamos");
+            Console.WriteLine(Author);
+            Console.WriteLine(RecipeName);
+            //Console.WriteLine(Reci);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            webClient.QueryString.Add("Author", Author);
+            webClient.QueryString.Add("RecipeName", RecipeName);
+            webClient.QueryString.Add("RecipeKind", RecipeKind);
+            webClient.QueryString.Add("RecipeRoll", RecipeRoll);
+            webClient.QueryString.Add("RecipeTime", RecipeTime);
+            webClient.QueryString.Add("DietType[0]", DietType[1]);
+            webClient.QueryString.Add("Steps[0]", Steps[0]);
+            webClient.QueryString.Add("Ingredients[0]", Ingredients[0]);
+            webClient.QueryString.Add("Amount",Amount);
+            webClient.QueryString.Add("Difficulty", Difficulty);
+
+     
+            Console.WriteLine();
+
+            String result = webClient.DownloadString("http://192.168.8.102:9080/" + request);
+            Console.Write("HOLA" + result);
+            return result;
+        }
+
+
 
     }
 }
