@@ -14,6 +14,7 @@ namespace CookTime
     {
         
         public static string UserName;
+        private static string globalusername;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -76,7 +77,11 @@ namespace CookTime
 
 
         }
-
+        public static string getusername
+        {
+            get { return globalusername; }
+            set { globalusername = value; }
+        }
 
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

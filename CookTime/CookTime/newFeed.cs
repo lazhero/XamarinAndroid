@@ -85,7 +85,7 @@ namespace CookTime
             switch (item.ItemId)
             {
                 case Resource.Id.ic_home:
-                    StartActivity(typeof(newFeed));
+                    StartActivity(typeof(InitActivity));
                     Finish();
                     break;
                 case Resource.Id.ic_recomendations:

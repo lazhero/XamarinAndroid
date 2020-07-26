@@ -16,6 +16,7 @@ namespace CookTime
     public class InitActivity : Activity
     {
         public string backUpUserName;
+        //string var = SingInActivity.getusername;(asi se deberia llamar)
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,6 +28,8 @@ namespace CookTime
 
             // Create your application here
         }
+
+        
 
 
         
