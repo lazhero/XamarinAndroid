@@ -90,36 +90,8 @@ namespace CookTime
             Button DesserB = FindViewById<Button>(Resource.Id.buttonDesert);
             DesserB.Click += DesserB_Click;
 
-            Button VegetarianB = FindViewById<Button>(Resource.Id.buttonVegetarian);
-            VegetarianB.Click += VegetarianB_Click;
-
-            Button VeganB = FindViewById<Button>(Resource.Id.buttonVegan);
-            VeganB.Click += VeganB_Click;
-
-            Button KosherB = FindViewById<Button>(Resource.Id.buttonKosher);
-            KosherB.Click += KosherB_Click;
-
-            Button KetoB = FindViewById<Button>(Resource.Id.buttonKeto);
-            KetoB.Click += KetoB_Click;
-
-            Button CeliacB = FindViewById<Button>(Resource.Id.buttonCeliac);
-            CeliacB.Click += CeliacB_Click;
-
-            Button CarnivorousB = FindViewById<Button>(Resource.Id.buttonCarnivorous);
-            CarnivorousB.Click += CarnivorousB_Click;
-
-
-
             Button BPost = FindViewById<Button>(Resource.Id.buttonPost);
             BPost.Click += BPost_Click;
-
-
-
-
-
-
-
-
 
             // Create your application here
         }
@@ -140,42 +112,6 @@ namespace CookTime
         private void BPost_Click(object sender, EventArgs e)
         {
             ShareRecipe();
-        }
-
-        private void CarnivorousB_Click(object sender, EventArgs e)
-        {
-            TypeOfDiet = "Carinovorous";
-        }
-
-        private void CeliacB_Click(object sender, EventArgs e)
-        {
-            
-            tipodieta += "Celiac/";
-            
-        }
-
-        private void KetoB_Click(object sender, EventArgs e)
-        {
-           
-            tipodieta+=("Keto/");
-        }
-
-        private void KosherB_Click(object sender, EventArgs e)
-        {
-            
-            tipodieta += ("Kosher/");
-        }
-
-        private void VeganB_Click(object sender, EventArgs e)
-        {
-            
-            tipodieta += ("Vegan/");
-        }
-
-        private void VegetarianB_Click(object sender, EventArgs e)
-        {
-         
-            tipodieta += ("Vegetarian/");
         }
 
         private void DesserB_Click(object sender, EventArgs e)
@@ -249,8 +185,6 @@ namespace CookTime
             TypeOfRecipe = "Lunch";
         }
 
- 
-    
 
         private void DinnerB_Click(object sender, EventArgs e)
         {
@@ -265,26 +199,10 @@ namespace CookTime
         private void ShareRecipe()
         {
 
-
-
             EditText txt_userName = FindViewById<EditText>(Resource.Id.textusername);
             EditText txt_RecipeName = FindViewById<EditText>(Resource.Id.textNameRecipe);
             EditText txt_difficulty = FindViewById<EditText>(Resource.Id.txtportions);
             EditText txt_portions = FindViewById<EditText>(Resource.Id.textdifficulty);
-
-            Console.WriteLine(txt_userName);
-            Console.WriteLine(txt_RecipeName);
-            Console.WriteLine(txt_difficulty);
-            Console.WriteLine(txt_portions);
-            Console.WriteLine(TypeOfRecipe);
-            Console.WriteLine(RollOfRecipe);
-            Console.WriteLine(TimeOfRecipe);
-            Console.WriteLine(txt_userName);
-            Console.WriteLine(tipodieta);
-            Console.WriteLine("LPTM"+ingredients);
-            Console.WriteLine("LPTM"+steps);
-         
-
 
             API api = new API();
             CheckBox ch1 = FindViewById<CheckBox>(Resource.Id.checkBox1);
@@ -293,16 +211,12 @@ namespace CookTime
             CheckBox ch4 = FindViewById<CheckBox>(Resource.Id.checkBox4);
             CheckBox ch5 = FindViewById<CheckBox>(Resource.Id.checkBox5);
             CheckBox ch6 = FindViewById<CheckBox>(Resource.Id.checkBox6);
-            Console.WriteLine("CHECL"+ch1.Checked);
-            Console.WriteLine("CHECL" + ch2.Checked);
-            Console.WriteLine("CHECL" + ch3.Checked);
 
             if (ch1.Checked == true)
             {
                 DietType += "Vegetarian/";
             }
             else {
-
             }
             if (ch2.Checked == true)
             {
@@ -310,16 +224,13 @@ namespace CookTime
             }
             else
             {
-
             }
             if (ch3.Checked == true)
             {
                 DietType += "Kosher/";
-
             }
             else
             {
-
             }
             if (ch4.Checked == true)
             {
@@ -327,7 +238,6 @@ namespace CookTime
             }
             else
             {
-
             }
             if (ch5.Checked == true)
             {
@@ -335,7 +245,6 @@ namespace CookTime
             }
             else
             {
-      
             }
             if (ch6.Checked == true)
             {
@@ -343,20 +252,12 @@ namespace CookTime
             }
             else
             {
-
-
             }
-
-
             Console.WriteLine("odio" + DietType);
 
-            //Console.WriteLine("HOLAAA"+tipodieta.Get(0));
             string Ap = api.connecta2("RecipeGetter", txt_userName.Text,txt_RecipeName.Text ,TypeOfRecipe, RollOfRecipe,TimeOfRecipe, DietType.Remove(DietType.Length-1),ingredients.Remove(ingredients.Length-1),steps.Remove(steps.Length-1),txt_portions.Text,txt_difficulty.Text);
-            //string app = api.connecta2("RecipeGetter", "xd", "ddd","Lunch", "Appetizer","LongerTime","Keto","Keto","Keto","5","5");
+        
         }
-
-
-
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.navigation, menu);
