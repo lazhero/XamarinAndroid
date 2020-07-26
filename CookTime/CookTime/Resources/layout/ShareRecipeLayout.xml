@@ -1,4 +1,5 @@
 
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -84,8 +85,8 @@
             android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtportions"
-            android:hint="for how many people?" />
+            android:id="@+id/txtamount"
+            android:hint="Amount" />
         <TextView
             android:text="Recipe Time"
             android:layout_width="match_parent"
@@ -169,6 +170,12 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textdifficulty"
                     android:hint="Difficulty number" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPortions"
+                    android:hint="Portions" />
                 <TextView
                     android:text="Diet Type"
                     android:layout_width="match_parent"
@@ -211,11 +218,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox6" />
-                    <Button
-                        android:text="Add Image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button1" />
+
                     <EditText
                         android:inputType="textMultiLine"
                         android:layout_width="match_parent"

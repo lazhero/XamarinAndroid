@@ -16,7 +16,7 @@ namespace CookTime
     class API
     {
         WebClient webClient = new WebClient();
-        private string site = "http://192.168.1.2:9080/";
+        private string site = "http://192.168.8.102:9080/";
 
         public string connect(string request, string UserName, string Password)
         {
@@ -61,7 +61,7 @@ namespace CookTime
             return result;
         }
 
-        public string connect(string request, string Author, string RecipeName, string RecipeKind, string RecipeRoll, string RecipeTime, string DietType, string Steps, string Ingredients, string Amount, string Difficulty)
+        public string connect(string request, string Author, string RecipeName, string RecipeKind, string RecipeRoll, string RecipeTime, string DietType, string portions, string Steps, string Ingredients, string Amount, string Difficulty)
         {
             Console.Write("iniciamos");
             Console.WriteLine(Author);
@@ -80,6 +80,7 @@ namespace CookTime
             webClient.QueryString.Add("DietType", DietType);
             webClient.QueryString.Add("portions", "5");
             webClient.QueryString.Add("Steps", Steps);
+            webClient.QueryString.Add("portions", portions);
             webClient.QueryString.Add("Ingredients", Ingredients);
             webClient.QueryString.Add("Amount", Amount);
             webClient.QueryString.Add("Difficulty", Difficulty);
