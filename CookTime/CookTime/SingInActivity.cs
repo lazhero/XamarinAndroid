@@ -46,6 +46,7 @@ namespace CookTime
 
             API api = new API();
             string xd = api.connect("proving", txt_userName.Text, txt_password.Text);
+            getusername = txt_userName.Text;
            
             if (xd.Equals(""))
                 return false;
