@@ -78,6 +78,7 @@ namespace CookTime
             //     webClient.QueryString.Add(xd + i.ToString() + "]", (string)DietType.Get(i));            
             // }
             webClient.QueryString.Add("DietType", DietType);
+            webClient.QueryString.Add("portions", "5");
             webClient.QueryString.Add("Steps", Steps);
             webClient.QueryString.Add("Ingredients", Ingredients);
             webClient.QueryString.Add("Amount", Amount);
