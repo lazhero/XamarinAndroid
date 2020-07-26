@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -9,21 +9,29 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-            android:background="#ECE2C6">
-        
-    <Toolbar
-        android:minHeight="?android:attr/actionBarSize"
-        android:background="?android:attr/colorPrimary"
-        android:minWidth="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar1"/>
+        android:background="#ECE2C6">
+
+        <Toolbar
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            android:minWidth="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar1">
+
+        </Toolbar>
         <TextView
             android:text="Share your recipe"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView1" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textusername"
+            android:hint="User Name"/>
         <EditText
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
@@ -49,7 +57,6 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
                 android:text="BreakFast"
                 android:id="@+id/buttonBreakfast" />
             <RadioButton
@@ -77,7 +84,7 @@
             android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText2"
+            android:id="@+id/txtportions"
             android:hint="for how many people?" />
         <TextView
             android:text="Recipe Time"
@@ -93,7 +100,6 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
                 android:text="Short Time"
                 android:id="@+id/buttonShortTime" />
             <RadioButton
@@ -130,7 +136,6 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Entry"
                     android:id="@+id/buttonEntry" />
                 <RadioButton
@@ -162,7 +167,7 @@
                     android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText3"
+                    android:id="@+id/textdifficulty"
                     android:hint="Difficulty number" />
                 <TextView
                     android:text="Diet Type"
@@ -178,7 +183,6 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
                         android:text="Vegetarian"
                         android:id="@+id/buttonVegetarian" />
                     <RadioButton
@@ -206,6 +210,37 @@
                         android:layout_height="wrap_content"
                         android:text="Carnivorous"
                         android:id="@+id/buttonCarnivorous" />
+                    <CheckBox
+                        android:text="Vegetarian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox1" />
+                    <CheckBox
+                        android:text="Vegan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox2" />
+                    <CheckBox
+                        android:text="Kosher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox3" />
+                    <CheckBox
+                        android:text="Celiac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox4" />
+                    <CheckBox
+                        android:text="Keto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox5"
+                        />
+                    <CheckBox
+                        android:text="Carnivorous"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox6" />
                     <Button
                         android:text="Add Image"
                         android:layout_width="match_parent"
@@ -215,14 +250,24 @@
                         android:inputType="textMultiLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/editText4"
+                        android:id="@+id/textIngredient"
                         android:hint="Ingredients" />
+                    <Button
+                        android:text="Add Ingredient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonIngredient" />
                     <EditText
                         android:inputType="textMultiLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/editText5"
+                        android:id="@+id/textsteps"
                         android:hint="Steps" />
+                    <Button
+                        android:text="Add Step"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonaddSteps" />
                     <Button
                         android:text="Post"
                         android:layout_width="match_parent"
@@ -237,7 +282,7 @@
 
 
 
-</LinearLayout>
+    </LinearLayout>
 
 
 

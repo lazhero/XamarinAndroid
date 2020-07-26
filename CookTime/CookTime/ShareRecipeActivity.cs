@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Util;
 
 namespace CookTime
 {
@@ -21,6 +22,9 @@ namespace CookTime
         private static string TimeRecipe = "";
         private static string RollRecipe = "";
         private static string DietType = "";
+        private static string tipodieta ="";
+        private static string ingredients = "";
+        private static string steps = "";
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -32,6 +36,12 @@ namespace CookTime
 
 
             //Buttons
+
+            Button BaddStep = FindViewById<Button>(Resource.Id.buttonaddSteps);
+            BaddStep.Click += BaddStep_Click;
+            Button BaddIngredients = FindViewById<Button>(Resource.Id.buttonIngredient);
+            BaddIngredients.Click += BaddIngredients_Click;
+
             Button BreakFastB = FindViewById<Button>(Resource.Id.buttonBreakfast);
             BreakFastB.Click += BreakFastB_Click;
 
@@ -102,10 +112,29 @@ namespace CookTime
 
             Button BPost = FindViewById<Button>(Resource.Id.buttonPost);
             BPost.Click += BPost_Click;
-            
+
+
+
+
+
+
+
 
 
             // Create your application here
+        }
+
+        private void BaddIngredients_Click(object sender, EventArgs e)
+        {
+
+            EditText txt_ingredient = FindViewById<EditText>(Resource.Id.textIngredient);
+            ingredients += txt_ingredient.Text + "/";
+        }
+
+        private void BaddStep_Click(object sender, EventArgs e)
+        {
+            EditText txt_step = FindViewById<EditText>(Resource.Id.textsteps);
+            steps += txt_step.Text + "/";
         }
 
         private void BPost_Click(object sender, EventArgs e)
@@ -120,27 +149,33 @@ namespace CookTime
 
         private void CeliacB_Click(object sender, EventArgs e)
         {
-            TypeOfDiet = "Celiac";
+            
+            tipodieta += "Celiac/";
+            
         }
 
         private void KetoB_Click(object sender, EventArgs e)
         {
-            TypeOfDiet = "Keto";
+           
+            tipodieta+=("Keto/");
         }
 
         private void KosherB_Click(object sender, EventArgs e)
         {
-            TypeOfDiet = "Kosher";
+            
+            tipodieta += ("Kosher/");
         }
 
         private void VeganB_Click(object sender, EventArgs e)
         {
-            TypeOfDiet = "Vegan";
+            
+            tipodieta += ("Vegan/");
         }
 
         private void VegetarianB_Click(object sender, EventArgs e)
         {
-            TypeOfDiet = "Cegetarian";
+         
+            tipodieta += ("Vegetarian/");
         }
 
         private void DesserB_Click(object sender, EventArgs e)
@@ -181,7 +216,7 @@ namespace CookTime
 
         private void LongerTimeB_Click(object sender, EventArgs e)
         {
-            TimeOfRecipe = "LongetTime";
+            TimeOfRecipe = "LongerTime";
         }
 
         private void LongTimeB_Click(object sender, EventArgs e)
@@ -201,7 +236,7 @@ namespace CookTime
 
         private void BrunchB_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            TypeOfRecipe = "Brunch";
         }
 
         private void SnackB_Click(object sender, EventArgs e)
@@ -213,6 +248,8 @@ namespace CookTime
         {
             TypeOfRecipe = "Lunch";
         }
+
+ 
     
 
         private void DinnerB_Click(object sender, EventArgs e)
@@ -222,16 +259,100 @@ namespace CookTime
 
         private void BreakFastB_Click(object sender, EventArgs e)
         {
-            TypeOfRecipe = "BreakFast";
+            TypeOfRecipe = "Breakfast";
         }
 
         private void ShareRecipe()
         {
+
+
+
+            EditText txt_userName = FindViewById<EditText>(Resource.Id.textusername);
+            EditText txt_RecipeName = FindViewById<EditText>(Resource.Id.textNameRecipe);
+            EditText txt_difficulty = FindViewById<EditText>(Resource.Id.txtportions);
+            EditText txt_portions = FindViewById<EditText>(Resource.Id.textdifficulty);
+
+            Console.WriteLine(txt_userName);
+            Console.WriteLine(txt_RecipeName);
+            Console.WriteLine(txt_difficulty);
+            Console.WriteLine(txt_portions);
+            Console.WriteLine(TypeOfRecipe);
+            Console.WriteLine(RollOfRecipe);
+            Console.WriteLine(TimeOfRecipe);
+            Console.WriteLine(txt_userName);
+            Console.WriteLine(tipodieta);
+            Console.WriteLine("LPTM"+ingredients);
+            Console.WriteLine("LPTM"+steps);
+         
+
+
             API api = new API();
-            string[] arr = new string[2];
-            arr[0] = "xd";
-            arr[1] = "Keto";
-            string Ap = api.connect("RecipeGetter", "a","a" ,"Lunch", "Entry","LongerTime",arr,arr,arr,"2","5");
+            CheckBox ch1 = FindViewById<CheckBox>(Resource.Id.checkBox1);
+            CheckBox ch2 = FindViewById<CheckBox>(Resource.Id.checkBox2);
+            CheckBox ch3 = FindViewById<CheckBox>(Resource.Id.checkBox3);
+            CheckBox ch4 = FindViewById<CheckBox>(Resource.Id.checkBox4);
+            CheckBox ch5 = FindViewById<CheckBox>(Resource.Id.checkBox5);
+            CheckBox ch6 = FindViewById<CheckBox>(Resource.Id.checkBox6);
+            Console.WriteLine("CHECL"+ch1.Checked);
+            Console.WriteLine("CHECL" + ch2.Checked);
+            Console.WriteLine("CHECL" + ch3.Checked);
+
+            if (ch1.Checked == true)
+            {
+                DietType += "Vegetarian/";
+            }
+            else {
+
+            }
+            if (ch2.Checked == true)
+            {
+                DietType += "Vegan/";
+            }
+            else
+            {
+
+            }
+            if (ch3.Checked == true)
+            {
+                DietType += "Kosher/";
+
+            }
+            else
+            {
+
+            }
+            if (ch4.Checked == true)
+            {
+                DietType += "Celiac/";
+            }
+            else
+            {
+
+            }
+            if (ch5.Checked == true)
+            {
+                DietType += "Keto/";
+            }
+            else
+            {
+      
+            }
+            if (ch6.Checked == true)
+            {
+                DietType += "Carnivorous/";
+            }
+            else
+            {
+
+
+            }
+
+
+            Console.WriteLine("odio" + DietType);
+
+            //Console.WriteLine("HOLAAA"+tipodieta.Get(0));
+            string Ap = api.connecta2("RecipeGetter", txt_userName.Text,txt_RecipeName.Text ,TypeOfRecipe, RollOfRecipe,TimeOfRecipe, DietType.Remove(DietType.Length-1),ingredients.Remove(ingredients.Length-1),steps.Remove(steps.Length-1),txt_portions.Text,txt_difficulty.Text);
+            //string app = api.connecta2("RecipeGetter", "xd", "ddd","Lunch", "Appetizer","LongerTime","Keto","Keto","Keto","5","5");
         }
 
 
@@ -285,7 +406,7 @@ namespace CookTime
             get { return RollRecipe; }
             set { RollRecipe = value; }
         }
-        public static string TypeOfDiet
+       public static string TypeOfDiet
         {
             get { return DietType; }
             set { DietType = value; }

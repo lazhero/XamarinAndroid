@@ -39,6 +39,7 @@ namespace CookTime
             EditText txt_userName = FindViewById<EditText>(Resource.Id.txtName);
             EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
 
+
             API api = new API();
             string xd = api.connect("proving", txt_userName.Text, txt_password.Text);
             Console.WriteLine(txt_userName);
