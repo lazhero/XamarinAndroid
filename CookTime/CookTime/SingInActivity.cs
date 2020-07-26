@@ -29,7 +29,7 @@ namespace CookTime
             Button buttonSingUp = FindViewById<Button>(Resource.Id.singupButton);
             buttonSingUp.Click += ButtonSingUp_Click;
 
-
+            
 
             
         }
@@ -38,6 +38,8 @@ namespace CookTime
         {
             EditText txt_userName = FindViewById<EditText>(Resource.Id.txtName);
             EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
+
+            
 
             UserName = txt_userName.Text;
 

@@ -65,6 +65,12 @@
             android:text="Date"
             android:id="@+id/DateButton"/>
 
+        <ListView
+            android:id="@+id/list_myMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
 
 
     </LinearLayout>

@@ -15,6 +15,9 @@ namespace CookTime
     [Activity(Label = "Notify")]
     public class NotificationsActivity : Activity
     {
+
+        ListView list_notifications;
+
         Toolbar toolbar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,7 +26,16 @@ namespace CookTime
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
             SetActionBar(toolbar);
 
-            // Create your application here
+
+            String userName = Intent.Extras.GetString("UserName");
+
+            API notificationAPI = new API();
+
+
+
+
+
+
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

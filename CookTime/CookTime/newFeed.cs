@@ -79,6 +79,9 @@ namespace CookTime
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
+            String userName = Intent.Extras.GetString("UserName");
+
+
             switch (item.ItemId)
             {
                 case Resource.Id.ic_home:
@@ -90,6 +93,8 @@ namespace CookTime
                     Finish();
                     break;
                 case Resource.Id.ic_notifications:
+                    Intent intent = new Intent();
+                    intent.PutExtra("UserName", userName);
                     StartActivity(typeof(NotificationsActivity));
                     Finish();
                     break;
