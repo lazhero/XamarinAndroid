@@ -3912,20 +3912,20 @@ namespace CookTime
 			// aapt resource value: 0x7F0800E6
 			public const int textAuthor = 2131230950;
 			
-			// aapt resource value: 0x7F0800F2
-			public const int textdifficulty = 2131230962;
+			// aapt resource value: 0x7F0800F3
+			public const int textdifficulty = 2131230963;
 			
 			// aapt resource value: 0x7F0800E7
 			public const int textIngredient = 2131230951;
 			
-			// aapt resource value: 0x7F0800F3
-			public const int textinput_counter = 2131230963;
-			
 			// aapt resource value: 0x7F0800F4
-			public const int textinput_error = 2131230964;
+			public const int textinput_counter = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int textinput_helper_text = 2131230965;
+			public const int textinput_error = 2131230965;
+			
+			// aapt resource value: 0x7F0800F6
+			public const int textinput_helper_text = 2131230966;
 			
 			// aapt resource value: 0x7F0800E8
 			public const int textNameRecipe = 2131230952;
@@ -3933,137 +3933,140 @@ namespace CookTime
 			// aapt resource value: 0x7F08000A
 			public const int TextPassword = 2131230730;
 			
-			// aapt resource value: 0x7F0800F6
-			public const int textselect = 2131230966;
-			
 			// aapt resource value: 0x7F0800E9
-			public const int textSpacerNoButtons = 2131230953;
-			
-			// aapt resource value: 0x7F0800EA
-			public const int textSpacerNoTitle = 2131230954;
-			
-			// aapt resource value: 0x7F0800EB
-			public const int textStart = 2131230955;
+			public const int textPortions = 2131230953;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int textsteps = 2131230967;
+			public const int textselect = 2131230967;
+			
+			// aapt resource value: 0x7F0800EA
+			public const int textSpacerNoButtons = 2131230954;
+			
+			// aapt resource value: 0x7F0800EB
+			public const int textSpacerNoTitle = 2131230955;
+			
+			// aapt resource value: 0x7F0800EC
+			public const int textStart = 2131230956;
+			
+			// aapt resource value: 0x7F0800F8
+			public const int textsteps = 2131230968;
 			
 			// aapt resource value: 0x7F08000B
 			public const int TextUser = 2131230731;
 			
-			// aapt resource value: 0x7F0800F8
-			public const int textusername = 2131230968;
-			
-			// aapt resource value: 0x7F0800EC
-			public const int textView1 = 2131230956;
+			// aapt resource value: 0x7F0800F9
+			public const int textusername = 2131230969;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int textView2 = 2131230957;
+			public const int textView1 = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int textView3 = 2131230958;
+			public const int textView2 = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int textView4 = 2131230959;
+			public const int textView3 = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int textView5 = 2131230960;
+			public const int textView4 = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int text_input_password_toggle = 2131230961;
+			public const int textView5 = 2131230961;
 			
-			// aapt resource value: 0x7F0800F9
-			public const int time = 2131230969;
+			// aapt resource value: 0x7F0800F2
+			public const int text_input_password_toggle = 2131230962;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int title = 2131230970;
+			public const int time = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int titleDividerNoCustom = 2131230971;
+			public const int title = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int title_template = 2131230972;
+			public const int titleDividerNoCustom = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int toolbar1 = 2131230973;
+			public const int title_template = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int top = 2131230974;
+			public const int toolbar1 = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int topPanel = 2131230975;
+			public const int top = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int touch_outside = 2131230976;
+			public const int topPanel = 2131230976;
 			
 			// aapt resource value: 0x7F080101
-			public const int transition_current_scene = 2131230977;
+			public const int touch_outside = 2131230977;
 			
 			// aapt resource value: 0x7F080102
-			public const int transition_layout_save = 2131230978;
+			public const int transition_current_scene = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int transition_position = 2131230979;
+			public const int transition_layout_save = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int transition_scene_layoutid_cache = 2131230980;
+			public const int transition_position = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int transition_transform = 2131230981;
+			public const int transition_scene_layoutid_cache = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int txtName = 2131230982;
-			
-			// aapt resource value: 0x7F080107
-			public const int txtPassword = 2131230983;
-			
-			// aapt resource value: 0x7F080113
-			public const int txtportions = 2131230995;
-			
-			// aapt resource value: 0x7F080108
-			public const int txt_authorName = 2131230984;
-			
-			// aapt resource value: 0x7F080109
-			public const int txt_course = 2131230985;
-			
-			// aapt resource value: 0x7F08010A
-			public const int txt_difficulty = 2131230986;
-			
-			// aapt resource value: 0x7F08010B
-			public const int txt_dishType = 2131230987;
-			
-			// aapt resource value: 0x7F08010C
-			public const int txt_ingredients = 2131230988;
-			
-			// aapt resource value: 0x7F08010D
-			public const int txt_portions = 2131230989;
-			
-			// aapt resource value: 0x7F08010E
-			public const int txt_preparationTime = 2131230990;
-			
-			// aapt resource value: 0x7F08010F
-			public const int txt_price = 2131230991;
-			
-			// aapt resource value: 0x7F080110
-			public const int txt_recipeName = 2131230992;
-			
-			// aapt resource value: 0x7F080111
-			public const int txt_steps = 2131230993;
-			
-			// aapt resource value: 0x7F080112
-			public const int txt_tags = 2131230994;
+			public const int transition_transform = 2131230982;
 			
 			// aapt resource value: 0x7F080114
-			public const int uniform = 2131230996;
+			public const int txtamount = 2131230996;
+			
+			// aapt resource value: 0x7F080107
+			public const int txtName = 2131230983;
+			
+			// aapt resource value: 0x7F080108
+			public const int txtPassword = 2131230984;
+			
+			// aapt resource value: 0x7F080109
+			public const int txt_authorName = 2131230985;
+			
+			// aapt resource value: 0x7F08010A
+			public const int txt_course = 2131230986;
+			
+			// aapt resource value: 0x7F08010B
+			public const int txt_difficulty = 2131230987;
+			
+			// aapt resource value: 0x7F08010C
+			public const int txt_dishType = 2131230988;
+			
+			// aapt resource value: 0x7F08010D
+			public const int txt_ingredients = 2131230989;
+			
+			// aapt resource value: 0x7F08010E
+			public const int txt_portions = 2131230990;
+			
+			// aapt resource value: 0x7F08010F
+			public const int txt_preparationTime = 2131230991;
+			
+			// aapt resource value: 0x7F080110
+			public const int txt_price = 2131230992;
+			
+			// aapt resource value: 0x7F080111
+			public const int txt_recipeName = 2131230993;
+			
+			// aapt resource value: 0x7F080112
+			public const int txt_steps = 2131230994;
+			
+			// aapt resource value: 0x7F080113
+			public const int txt_tags = 2131230995;
 			
 			// aapt resource value: 0x7F080115
-			public const int unlabeled = 2131230997;
+			public const int uniform = 2131230997;
 			
 			// aapt resource value: 0x7F080116
-			public const int up = 2131230998;
+			public const int unlabeled = 2131230998;
 			
 			// aapt resource value: 0x7F080117
-			public const int useLogo = 2131230999;
+			public const int up = 2131230999;
+			
+			// aapt resource value: 0x7F080118
+			public const int useLogo = 2131231000;
 			
 			// aapt resource value: 0x7F08000C
 			public const int UserAge = 2131230732;
@@ -4074,20 +4077,20 @@ namespace CookTime
 			// aapt resource value: 0x7F08000E
 			public const int UserName = 2131230734;
 			
-			// aapt resource value: 0x7F080118
-			public const int view_offset_helper = 2131231000;
-			
 			// aapt resource value: 0x7F080119
-			public const int visible = 2131231001;
+			public const int view_offset_helper = 2131231001;
 			
 			// aapt resource value: 0x7F08011A
-			public const int withText = 2131231002;
+			public const int visible = 2131231002;
 			
 			// aapt resource value: 0x7F08011B
-			public const int wrap_content = 2131231003;
+			public const int withText = 2131231003;
 			
 			// aapt resource value: 0x7F08011C
-			public const int xd = 2131231004;
+			public const int wrap_content = 2131231004;
+			
+			// aapt resource value: 0x7F08011D
+			public const int xd = 2131231005;
 			
 			static Id()
 			{

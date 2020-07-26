@@ -22,7 +22,7 @@ namespace CookTime
         private static string TimeRecipe = "";
         private static string RollRecipe = "";
         private static string DietType = "";
-        private static string tipodieta ="";
+        private static string tipodieta = "";
         private static string ingredients = "";
         private static string steps = "";
 
@@ -201,8 +201,9 @@ namespace CookTime
 
             EditText txt_userName = FindViewById<EditText>(Resource.Id.textusername);
             EditText txt_RecipeName = FindViewById<EditText>(Resource.Id.textNameRecipe);
-            EditText txt_difficulty = FindViewById<EditText>(Resource.Id.txtportions);
-            EditText txt_portions = FindViewById<EditText>(Resource.Id.textdifficulty);
+            EditText txt_portions = FindViewById<EditText>(Resource.Id.textPortions);
+            EditText txt_difficulty = FindViewById<EditText>(Resource.Id.textdifficulty);
+            EditText txt_amount = FindViewById<EditText>(Resource.Id.txtamount);
 
             API api = new API();
             CheckBox ch1 = FindViewById<CheckBox>(Resource.Id.checkBox1);
@@ -216,7 +217,8 @@ namespace CookTime
             {
                 DietType += "Vegetarian/";
             }
-            else {
+            else
+            {
             }
             if (ch2.Checked == true)
             {
@@ -255,9 +257,12 @@ namespace CookTime
             }
             Console.WriteLine("odio" + DietType);
 
-            string Ap = api.connect("RecipeGetter", txt_userName.Text,txt_RecipeName.Text ,TypeOfRecipe, RollOfRecipe,TimeOfRecipe, DietType.Remove(DietType.Length-1),ingredients.Remove(ingredients.Length-1),steps.Remove(steps.Length-1),txt_portions.Text,txt_difficulty.Text);
+            string Ap = api.connect("RecipeGetter", txt_userName.Text, txt_RecipeName.Text, TypeOfRecipe, RollOfRecipe, TimeOfRecipe, DietType.Remove(DietType.Length - 1), txt_portions.Text, ingredients.Remove(ingredients.Length - 1), steps.Remove(steps.Length - 1), txt_amount.Text, txt_difficulty.Text);
 
             DietType = "";
+            StartActivity(typeof(InitActivity));
+            Finish();
+
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -308,7 +313,7 @@ namespace CookTime
             get { return RollRecipe; }
             set { RollRecipe = value; }
         }
-       public static string TypeOfDiet
+        public static string TypeOfDiet
         {
             get { return DietType; }
             set { DietType = value; }
