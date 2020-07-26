@@ -19,7 +19,7 @@ namespace CookTime
     {
 
         ListView list_posts;
-
+        string username = SingInActivity.getusername;
 
 
         Toolbar toolbar;
@@ -30,15 +30,8 @@ namespace CookTime
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
             SetActionBar(toolbar);
 
-            // User name traido desde log in
-            String userName = Intent.Extras.GetString("UserName");
-
-
             API newsfeedAPI = new API();
-            string jsonRecipes = newsfeedAPI.connect("NewsFed", userName);
-
-            Console.WriteLine("User name desde newsfeed: " + userName);
-            Console.WriteLine("json string desde newsfeed: " + jsonRecipes);
+            string jsonRecipes = newsfeedAPI.connect("NewsFed", username);
 
             List<Recipe> recipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonRecipes);//Toma el json y lo transforma a objetos y crea una lista de objetos recetas.
 
@@ -63,11 +56,8 @@ namespace CookTime
 
         private void toPost(int RecipePosition)
         {
-            String userName = Intent.Extras.GetString("UserName");
-
             Intent intent = new Intent(this, typeof(PostActivity));
             intent.PutExtra("RecipePosition", RecipePosition);// se envia la posicion del nombre de la receta a la siguiente actividad
-            intent.PutExtra("UserName", userName);
             StartActivity(intent);
             Finish();
         }
@@ -79,7 +69,6 @@ namespace CookTime
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            String userName = Intent.Extras.GetString("UserName");
 
 
             switch (item.ItemId)
@@ -94,7 +83,6 @@ namespace CookTime
                     break;
                 case Resource.Id.ic_notifications:
                     Intent intent = new Intent();
-                    intent.PutExtra("UserName", userName);
                     StartActivity(typeof(NotificationsActivity));
                     Finish();
                     break;

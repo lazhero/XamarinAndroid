@@ -45,10 +45,10 @@ namespace CookTime
             UserName = txt_userName.Text;
 
             API api = new API();
-            string xd = api.connect("proving", txt_userName.Text, txt_password.Text);
+            string singInAPI = api.connect("proving", txt_userName.Text, txt_password.Text);
             getusername = txt_userName.Text;
            
-            if (xd.Equals(""))
+            if (singInAPI.Equals(""))
                 return false;
             else
                 return true;

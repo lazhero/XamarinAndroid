@@ -16,7 +16,8 @@ namespace CookTime
     [Activity(Label = "PostActivity")]
     public class PostActivity : Activity
     {
-        
+        string username = SingInActivity.getusername;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,12 +25,12 @@ namespace CookTime
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.PostLayout);
 
-            String userName = Intent.Extras.GetString("UserName");
+            //String userName = Intent.Extras.GetString("UserName");
             int rp = Intent.Extras.GetInt("RecipePosition"); // rp: posicion de la receta en la lista de recetas, lo utilizamos para encontrar la recta a la que se dio click
 
 
             API newsfeedAPI = new API();
-            string jsonRecipes = newsfeedAPI.connect("NewsFed", userName);
+            string jsonRecipes = newsfeedAPI.connect("NewsFed", username);
             List<Recipe> recipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonRecipes);// creamos una lista de recetas traida desde el servidor
 
             

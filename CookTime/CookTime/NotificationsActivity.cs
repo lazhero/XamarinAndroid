@@ -27,8 +27,6 @@ namespace CookTime
             SetActionBar(toolbar);
 
 
-            String userName = Intent.Extras.GetString("UserName");
-
             API notificationAPI = new API();
 
 
