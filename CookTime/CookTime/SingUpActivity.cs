@@ -40,6 +40,7 @@ namespace CookTime
         {
             var intent = new Intent(this, typeof(SingInActivity));
             StartActivity(intent);
+            Finish();
         }
         private void register()
         {
