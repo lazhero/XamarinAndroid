@@ -255,7 +255,7 @@ namespace CookTime
             }
             Console.WriteLine("odio" + DietType);
 
-            string Ap = api.connecta2("RecipeGetter", txt_userName.Text,txt_RecipeName.Text ,TypeOfRecipe, RollOfRecipe,TimeOfRecipe, DietType.Remove(DietType.Length-1),ingredients.Remove(ingredients.Length-1),steps.Remove(steps.Length-1),txt_portions.Text,txt_difficulty.Text);
+            string Ap = api.connect("RecipeGetter", txt_userName.Text,txt_RecipeName.Text ,TypeOfRecipe, RollOfRecipe,TimeOfRecipe, DietType.Remove(DietType.Length-1),ingredients.Remove(ingredients.Length-1),steps.Remove(steps.Length-1),txt_portions.Text,txt_difficulty.Text);
         
         }
         public override bool OnCreateOptionsMenu(IMenu menu)

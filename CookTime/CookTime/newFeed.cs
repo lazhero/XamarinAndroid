@@ -37,8 +37,10 @@ namespace CookTime
             API newsfeedAPI = new API();
             string jsonRecipes = newsfeedAPI.connect("NewsFed", userName);
 
-            List<Recipe> recipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonRecipes);//Toma el json y lo transforma a objetos y crea una lista de objetos recetas.
+            Console.WriteLine("User name desde newsfeed: " + userName);
+            Console.WriteLine("json string desde newsfeed: " + jsonRecipes);
 
+            List<Recipe> recipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonRecipes);//Toma el json y lo transforma a objetos y crea una lista de objetos recetas.
 
             list_posts = FindViewById<ListView>(Resource.Id.list_posts);
             List<string> list_recipe = new List<string>();// Lista vacia con el fin de llenarla con el nombre de cada receta.
