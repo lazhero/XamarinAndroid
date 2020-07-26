@@ -3234,110 +3234,119 @@ namespace CookTime
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F080023
-			public const int actions = 2131230755;
+			// aapt resource value: 0x7F080020
+			public const int actions = 2131230752;
+			
+			// aapt resource value: 0x7F08000F
+			public const int action_bar = 2131230735;
+			
+			// aapt resource value: 0x7F080010
+			public const int action_bar_activity_content = 2131230736;
+			
+			// aapt resource value: 0x7F080011
+			public const int action_bar_container = 2131230737;
 			
 			// aapt resource value: 0x7F080012
-			public const int action_bar = 2131230738;
+			public const int action_bar_root = 2131230738;
 			
 			// aapt resource value: 0x7F080013
-			public const int action_bar_activity_content = 2131230739;
+			public const int action_bar_spinner = 2131230739;
 			
 			// aapt resource value: 0x7F080014
-			public const int action_bar_container = 2131230740;
+			public const int action_bar_subtitle = 2131230740;
 			
 			// aapt resource value: 0x7F080015
-			public const int action_bar_root = 2131230741;
+			public const int action_bar_title = 2131230741;
 			
 			// aapt resource value: 0x7F080016
-			public const int action_bar_spinner = 2131230742;
+			public const int action_container = 2131230742;
 			
 			// aapt resource value: 0x7F080017
-			public const int action_bar_subtitle = 2131230743;
+			public const int action_context_bar = 2131230743;
 			
 			// aapt resource value: 0x7F080018
-			public const int action_bar_title = 2131230744;
+			public const int action_divider = 2131230744;
 			
 			// aapt resource value: 0x7F080019
-			public const int action_container = 2131230745;
+			public const int action_image = 2131230745;
 			
 			// aapt resource value: 0x7F08001A
-			public const int action_context_bar = 2131230746;
+			public const int action_menu_divider = 2131230746;
 			
 			// aapt resource value: 0x7F08001B
-			public const int action_divider = 2131230747;
+			public const int action_menu_presenter = 2131230747;
 			
 			// aapt resource value: 0x7F08001C
-			public const int action_image = 2131230748;
+			public const int action_mode_bar = 2131230748;
 			
 			// aapt resource value: 0x7F08001D
-			public const int action_menu_divider = 2131230749;
+			public const int action_mode_bar_stub = 2131230749;
 			
 			// aapt resource value: 0x7F08001E
-			public const int action_menu_presenter = 2131230750;
+			public const int action_mode_close_button = 2131230750;
 			
 			// aapt resource value: 0x7F08001F
-			public const int action_mode_bar = 2131230751;
-			
-			// aapt resource value: 0x7F080020
-			public const int action_mode_bar_stub = 2131230752;
+			public const int action_text = 2131230751;
 			
 			// aapt resource value: 0x7F080021
-			public const int action_mode_close_button = 2131230753;
+			public const int activity_chooser_view_content = 2131230753;
 			
 			// aapt resource value: 0x7F080022
-			public const int action_text = 2131230754;
+			public const int add = 2131230754;
+			
+			// aapt resource value: 0x7F080023
+			public const int alertTitle = 2131230755;
 			
 			// aapt resource value: 0x7F080024
-			public const int activity_chooser_view_content = 2131230756;
-			
-			// aapt resource value: 0x7F080025
-			public const int add = 2131230757;
-			
-			// aapt resource value: 0x7F080026
-			public const int alertTitle = 2131230758;
-			
-			// aapt resource value: 0x7F080027
-			public const int all = 2131230759;
+			public const int all = 2131230756;
 			
 			// aapt resource value: 0x7F080000
 			public const int ALT = 2131230720;
 			
+			// aapt resource value: 0x7F080025
+			public const int always = 2131230757;
+			
+			// aapt resource value: 0x7F080026
+			public const int async = 2131230758;
+			
+			// aapt resource value: 0x7F080027
+			public const int auto = 2131230759;
+			
 			// aapt resource value: 0x7F080028
-			public const int always = 2131230760;
+			public const int beginning = 2131230760;
 			
 			// aapt resource value: 0x7F080029
-			public const int async = 2131230761;
+			public const int blocking = 2131230761;
 			
 			// aapt resource value: 0x7F08002A
-			public const int auto = 2131230762;
+			public const int bottom = 2131230762;
 			
 			// aapt resource value: 0x7F08002B
-			public const int beginning = 2131230763;
-			
-			// aapt resource value: 0x7F08002C
-			public const int blocking = 2131230764;
-			
-			// aapt resource value: 0x7F08002D
-			public const int bottom = 2131230765;
+			public const int browser_actions_header_text = 2131230763;
 			
 			// aapt resource value: 0x7F08002E
-			public const int browser_actions_header_text = 2131230766;
+			public const int browser_actions_menu_items = 2131230766;
 			
-			// aapt resource value: 0x7F080031
-			public const int browser_actions_menu_items = 2131230769;
+			// aapt resource value: 0x7F08002C
+			public const int browser_actions_menu_item_icon = 2131230764;
+			
+			// aapt resource value: 0x7F08002D
+			public const int browser_actions_menu_item_text = 2131230765;
 			
 			// aapt resource value: 0x7F08002F
-			public const int browser_actions_menu_item_icon = 2131230767;
+			public const int browser_actions_menu_view = 2131230767;
 			
 			// aapt resource value: 0x7F080030
-			public const int browser_actions_menu_item_text = 2131230768;
+			public const int btn_createCompany = 2131230768;
+			
+			// aapt resource value: 0x7F080031
+			public const int btn_date = 2131230769;
 			
 			// aapt resource value: 0x7F080032
-			public const int browser_actions_menu_view = 2131230770;
+			public const int btn_difficulty = 2131230770;
 			
 			// aapt resource value: 0x7F080033
-			public const int btn_createCompany = 2131230771;
+			public const int btn_punctuation = 2131230771;
 			
 			// aapt resource value: 0x7F080034
 			public const int button1 = 2131230772;
@@ -3483,9 +3492,6 @@ namespace CookTime
 			// aapt resource value: 0x7F080062
 			public const int customPanel = 2131230818;
 			
-			// aapt resource value: 0x7F080002
-			public const int DateButton = 2131230722;
-			
 			// aapt resource value: 0x7F080063
 			public const int decor_content_parent = 2131230819;
 			
@@ -3506,9 +3512,6 @@ namespace CookTime
 			
 			// aapt resource value: 0x7F080069
 			public const int design_navigation_view = 2131230825;
-			
-			// aapt resource value: 0x7F080003
-			public const int DifficultyButton = 2131230723;
 			
 			// aapt resource value: 0x7F08006A
 			public const int disableHome = 2131230826;
@@ -3564,8 +3567,8 @@ namespace CookTime
 			// aapt resource value: 0x7F08007B
 			public const int forever = 2131230843;
 			
-			// aapt resource value: 0x7F080004
-			public const int FUNCTION = 2131230724;
+			// aapt resource value: 0x7F080002
+			public const int FUNCTION = 2131230722;
 			
 			// aapt resource value: 0x7F08007C
 			public const int ghost_view = 2131230844;
@@ -3657,8 +3660,8 @@ namespace CookTime
 			// aapt resource value: 0x7F080099
 			public const int message = 2131230873;
 			
-			// aapt resource value: 0x7F080005
-			public const int META = 2131230725;
+			// aapt resource value: 0x7F080003
+			public const int META = 2131230723;
 			
 			// aapt resource value: 0x7F08009B
 			public const int middle = 2131230875;
@@ -3699,17 +3702,17 @@ namespace CookTime
 			// aapt resource value: 0x7F0800A6
 			public const int notification_main_column_container = 2131230886;
 			
+			// aapt resource value: 0x7F080004
+			public const int NumberFinishHour = 2131230724;
+			
+			// aapt resource value: 0x7F080005
+			public const int NumberFinishMinute = 2131230725;
+			
 			// aapt resource value: 0x7F080006
-			public const int NumberFinishHour = 2131230726;
+			public const int NumberInitHour = 2131230726;
 			
 			// aapt resource value: 0x7F080007
-			public const int NumberFinishMinute = 2131230727;
-			
-			// aapt resource value: 0x7F080008
-			public const int NumberInitHour = 2131230728;
-			
-			// aapt resource value: 0x7F080009
-			public const int NumebrInitMinute = 2131230729;
+			public const int NumebrInitMinute = 2131230727;
 			
 			// aapt resource value: 0x7F0800A7
 			public const int outline = 2131230887;
@@ -3731,9 +3734,6 @@ namespace CookTime
 			
 			// aapt resource value: 0x7F0800AD
 			public const int progress_horizontal = 2131230893;
-			
-			// aapt resource value: 0x7F08000A
-			public const int PunctuationButton = 2131230730;
 			
 			// aapt resource value: 0x7F0800AE
 			public const int radio = 2131230894;
@@ -3825,8 +3825,8 @@ namespace CookTime
 			// aapt resource value: 0x7F0800CA
 			public const int select_dialog_listview = 2131230922;
 			
-			// aapt resource value: 0x7F08000B
-			public const int SHIFT = 2131230731;
+			// aapt resource value: 0x7F080008
+			public const int SHIFT = 2131230728;
 			
 			// aapt resource value: 0x7F0800CC
 			public const int shortcut = 2131230924;
@@ -3888,8 +3888,8 @@ namespace CookTime
 			// aapt resource value: 0x7F0800DF
 			public const int submit_area = 2131230943;
 			
-			// aapt resource value: 0x7F08000C
-			public const int SYM = 2131230732;
+			// aapt resource value: 0x7F080009
+			public const int SYM = 2131230729;
 			
 			// aapt resource value: 0x7F0800E0
 			public const int tabMode = 2131230944;
@@ -3930,8 +3930,8 @@ namespace CookTime
 			// aapt resource value: 0x7F0800E8
 			public const int textNameRecipe = 2131230952;
 			
-			// aapt resource value: 0x7F08000D
-			public const int TextPassword = 2131230733;
+			// aapt resource value: 0x7F08000A
+			public const int TextPassword = 2131230730;
 			
 			// aapt resource value: 0x7F0800F6
 			public const int textselect = 2131230966;
@@ -3948,8 +3948,8 @@ namespace CookTime
 			// aapt resource value: 0x7F0800F7
 			public const int textsteps = 2131230967;
 			
-			// aapt resource value: 0x7F08000E
-			public const int TextUser = 2131230734;
+			// aapt resource value: 0x7F08000B
+			public const int TextUser = 2131230731;
 			
 			// aapt resource value: 0x7F0800F8
 			public const int textusername = 2131230968;
@@ -4065,14 +4065,14 @@ namespace CookTime
 			// aapt resource value: 0x7F080117
 			public const int useLogo = 2131230999;
 			
-			// aapt resource value: 0x7F08000F
-			public const int UserAge = 2131230735;
+			// aapt resource value: 0x7F08000C
+			public const int UserAge = 2131230732;
 			
-			// aapt resource value: 0x7F080010
-			public const int UserLastName = 2131230736;
+			// aapt resource value: 0x7F08000D
+			public const int UserLastName = 2131230733;
 			
-			// aapt resource value: 0x7F080011
-			public const int UserName = 2131230737;
+			// aapt resource value: 0x7F08000E
+			public const int UserName = 2131230734;
 			
 			// aapt resource value: 0x7F080118
 			public const int view_offset_helper = 2131231000;

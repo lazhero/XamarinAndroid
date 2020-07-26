@@ -49,13 +49,13 @@
         android:weightSum="3">
 
         <Button
-            android:id="@+id/DifficultyButton"
+            android:id="@+id/btn_difficulty"
             android:layout_width="105.0dp"
             android:layout_height="60.0dp"
             android:text="Difficulty"
         />
         <Button
-            android:id="@+id/PunctuationButton"
+            android:id="@+id/btn_punctuation"
             android:text="Punctuation"
             android:layout_width="130.0dp"
             android:layout_height="60.0dp"/>
@@ -63,7 +63,7 @@
             android:layout_width="105.0dp"
             android:layout_height="60.0dp"
             android:text="Date"
-            android:id="@+id/DateButton"/>
+            android:id="@+id/btn_date"/>
 
         <ListView
             android:id="@+id/list_myMenu"

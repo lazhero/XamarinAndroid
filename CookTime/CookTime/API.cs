@@ -26,6 +26,14 @@ namespace CookTime
             return result;
         }
 
+        public string connectSort(string request, string Sort, string UserName)
+        {
+            webClient.QueryString.Add("SortState", Sort);
+            webClient.QueryString.Add("UserName", UserName);
+            string result = webClient.DownloadString(site + request);
+            return result;
+        }
+
         public string connect(string request, string UserName)
         {
             webClient.QueryString.Add("UserName", UserName);
