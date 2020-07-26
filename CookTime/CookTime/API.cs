@@ -16,12 +16,19 @@ namespace CookTime
     class API
     {
         WebClient webClient = new WebClient();
-        private string site = "http://192.168.8.102:9080/";
+        private string site = "http://192.168.1.2:9080/";
 
         public string connect(string request, string UserName, string Password)
         {
             webClient.QueryString.Add("UserName", UserName);
             webClient.QueryString.Add("Password", Password);
+            string result = webClient.DownloadString(site + request);
+            return result;
+        }
+
+        public string connect(string request, string UserName)
+        {
+            webClient.QueryString.Add("UserName", UserName);
             string result = webClient.DownloadString(site + request);
             return result;
         }

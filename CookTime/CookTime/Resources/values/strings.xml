@@ -20,5 +20,6 @@
 	<string name="singup.Age.hint">Age</string>
 	<string name="singup.Donthaveaccount.text"> Dont have an account? </string>
 	<string name="singin.singin.text"> 	Sing in to you CookTime Account </string>
+  
 
 </resources>

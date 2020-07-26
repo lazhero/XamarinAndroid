@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="administration.cs" />
     <Compile Include="API.cs" />
+    <Compile Include="Comment.cs" />
     <Compile Include="FollowersActivity.cs" />
     <Compile Include="FollowingActivity.cs" />
     <Compile Include="InitActivity.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="NotificationsActivity.cs" />
     <Compile Include="PostActivity.cs" />
     <Compile Include="ProfileActivity.cs" />
+    <Compile Include="Recipe.cs" />
     <Compile Include="RecomendationsActivity.cs" />
     <Compile Include="ShareRecipeActivity.cs" />
     <Compile Include="SingInActivity.cs" />
@@ -117,6 +119,15 @@
     <AndroidResource Include="Resources\drawable\ic_dashboard_black_24dp.xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Primitives">
+      <Version>4.3.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
       <Version>28.0.0.3</Version>
     </PackageReference>
@@ -305,6 +316,9 @@
     <AndroidResource Include="Resources\layout\administration.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\PostLayout.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

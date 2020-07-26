@@ -21,7 +21,7 @@ namespace CookTime
             SetContentView(Resource.Layout.administration);
 
 
-            Button BCreate = FindViewById<Button>(Resource.Id.buttoncreatecompany);
+            Button BCreate = FindViewById<Button>(Resource.Id.btn_createCompany);
             BCreate.Click += BCreate_Click;
 
             ;

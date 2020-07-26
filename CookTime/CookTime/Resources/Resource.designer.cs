@@ -3337,100 +3337,100 @@ namespace CookTime
 			public const int browser_actions_menu_view = 2131230770;
 			
 			// aapt resource value: 0x7F080033
-			public const int button1 = 2131230771;
-			
-			// aapt resource value: 0x7F080051
-			public const int buttonadministration = 2131230801;
+			public const int btn_createCompany = 2131230771;
 			
 			// aapt resource value: 0x7F080034
-			public const int buttonAlcoholic = 2131230772;
-			
-			// aapt resource value: 0x7F080035
-			public const int buttonAppetizer = 2131230773;
-			
-			// aapt resource value: 0x7F080036
-			public const int buttonBreakfast = 2131230774;
-			
-			// aapt resource value: 0x7F080037
-			public const int buttonBrunch = 2131230775;
-			
-			// aapt resource value: 0x7F080038
-			public const int buttonCarnivorous = 2131230776;
-			
-			// aapt resource value: 0x7F080039
-			public const int buttonCeliac = 2131230777;
-			
-			// aapt resource value: 0x7F08003A
-			public const int buttonColdDrink = 2131230778;
+			public const int button1 = 2131230772;
 			
 			// aapt resource value: 0x7F080052
-			public const int buttoncreatecompany = 2131230802;
+			public const int buttonadministration = 2131230802;
+			
+			// aapt resource value: 0x7F080035
+			public const int buttonAlcoholic = 2131230773;
+			
+			// aapt resource value: 0x7F080036
+			public const int buttonAppetizer = 2131230774;
+			
+			// aapt resource value: 0x7F080037
+			public const int buttonBreakfast = 2131230775;
+			
+			// aapt resource value: 0x7F080038
+			public const int buttonBrunch = 2131230776;
+			
+			// aapt resource value: 0x7F080039
+			public const int buttonCarnivorous = 2131230777;
+			
+			// aapt resource value: 0x7F08003A
+			public const int buttonCeliac = 2131230778;
 			
 			// aapt resource value: 0x7F08003B
-			public const int buttonDesert = 2131230779;
+			public const int buttonColdDrink = 2131230779;
 			
 			// aapt resource value: 0x7F08003C
-			public const int buttonDinner = 2131230780;
+			public const int buttonDesert = 2131230780;
 			
 			// aapt resource value: 0x7F08003D
-			public const int buttonEntry = 2131230781;
+			public const int buttonDinner = 2131230781;
 			
 			// aapt resource value: 0x7F08003E
-			public const int buttonFollowers = 2131230782;
+			public const int buttonEntry = 2131230782;
 			
 			// aapt resource value: 0x7F08003F
-			public const int buttonFollowing = 2131230783;
+			public const int buttonFollowers = 2131230783;
 			
 			// aapt resource value: 0x7F080040
-			public const int buttonGetStarted = 2131230784;
+			public const int buttonFollowing = 2131230784;
 			
 			// aapt resource value: 0x7F080041
-			public const int buttonKeto = 2131230785;
+			public const int buttonGetStarted = 2131230785;
 			
 			// aapt resource value: 0x7F080042
-			public const int buttonKosher = 2131230786;
-			
-			// aapt resource value: 0x7F080044
-			public const int buttonLongerTime = 2131230788;
+			public const int buttonKeto = 2131230786;
 			
 			// aapt resource value: 0x7F080043
-			public const int buttonLongTime = 2131230787;
+			public const int buttonKosher = 2131230787;
 			
 			// aapt resource value: 0x7F080045
-			public const int buttonLunch = 2131230789;
+			public const int buttonLongerTime = 2131230789;
+			
+			// aapt resource value: 0x7F080044
+			public const int buttonLongTime = 2131230788;
 			
 			// aapt resource value: 0x7F080046
-			public const int buttonMainCourse = 2131230790;
+			public const int buttonLunch = 2131230790;
 			
 			// aapt resource value: 0x7F080047
-			public const int buttonMiddleTime = 2131230791;
+			public const int buttonMainCourse = 2131230791;
 			
 			// aapt resource value: 0x7F080048
-			public const int buttonPanel = 2131230792;
+			public const int buttonMiddleTime = 2131230792;
 			
 			// aapt resource value: 0x7F080049
-			public const int buttonPost = 2131230793;
+			public const int buttonPanel = 2131230793;
 			
 			// aapt resource value: 0x7F08004A
-			public const int buttonShortTime = 2131230794;
+			public const int buttonPost = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int buttonSingIn2 = 2131230795;
+			public const int buttonShortTime = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int buttonSnack = 2131230796;
+			public const int buttonSingIn2 = 2131230796;
 			
 			// aapt resource value: 0x7F08004D
-			public const int buttonToInit = 2131230797;
+			public const int buttonSnack = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
-			public const int buttonVegan = 2131230798;
+			public const int buttonToInit = 2131230798;
 			
 			// aapt resource value: 0x7F08004F
-			public const int buttonVegetarian = 2131230799;
+			public const int buttonVegan = 2131230799;
 			
 			// aapt resource value: 0x7F080050
-			public const int buttonWarmDrink = 2131230800;
+			public const int buttonVegetarian = 2131230800;
+			
+			// aapt resource value: 0x7F080051
+			public const int buttonWarmDrink = 2131230801;
 			
 			// aapt resource value: 0x7F080053
 			public const int center = 2131230803;
@@ -4003,16 +4003,49 @@ namespace CookTime
 			public const int txtPassword = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int uniform = 2131230979;
+			public const int txt_authorName = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int unlabeled = 2131230980;
+			public const int txt_course = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int up = 2131230981;
+			public const int txt_difficulty = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int useLogo = 2131230982;
+			public const int txt_dishType = 2131230982;
+			
+			// aapt resource value: 0x7F080107
+			public const int txt_ingredients = 2131230983;
+			
+			// aapt resource value: 0x7F080108
+			public const int txt_portions = 2131230984;
+			
+			// aapt resource value: 0x7F080109
+			public const int txt_preparationTime = 2131230985;
+			
+			// aapt resource value: 0x7F08010A
+			public const int txt_price = 2131230986;
+			
+			// aapt resource value: 0x7F08010B
+			public const int txt_recipeName = 2131230987;
+			
+			// aapt resource value: 0x7F08010C
+			public const int txt_steps = 2131230988;
+			
+			// aapt resource value: 0x7F08010D
+			public const int txt_tags = 2131230989;
+			
+			// aapt resource value: 0x7F08010E
+			public const int uniform = 2131230990;
+			
+			// aapt resource value: 0x7F08010F
+			public const int unlabeled = 2131230991;
+			
+			// aapt resource value: 0x7F080110
+			public const int up = 2131230992;
+			
+			// aapt resource value: 0x7F080111
+			public const int useLogo = 2131230993;
 			
 			// aapt resource value: 0x7F08000F
 			public const int UserAge = 2131230735;
@@ -4023,20 +4056,20 @@ namespace CookTime
 			// aapt resource value: 0x7F080011
 			public const int UserName = 2131230737;
 			
-			// aapt resource value: 0x7F080107
-			public const int view_offset_helper = 2131230983;
+			// aapt resource value: 0x7F080112
+			public const int view_offset_helper = 2131230994;
 			
-			// aapt resource value: 0x7F080108
-			public const int visible = 2131230984;
+			// aapt resource value: 0x7F080113
+			public const int visible = 2131230995;
 			
-			// aapt resource value: 0x7F080109
-			public const int withText = 2131230985;
+			// aapt resource value: 0x7F080114
+			public const int withText = 2131230996;
 			
-			// aapt resource value: 0x7F08010A
-			public const int wrap_content = 2131230986;
+			// aapt resource value: 0x7F080115
+			public const int wrap_content = 2131230997;
 			
-			// aapt resource value: 0x7F08010B
-			public const int xd = 2131230987;
+			// aapt resource value: 0x7F080116
+			public const int xd = 2131230998;
 			
 			static Id()
 			{
@@ -4315,31 +4348,34 @@ namespace CookTime
 			public const int notification_template_part_time = 2131427386;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int Profile = 2131427388;
+			public const int PostLayout = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int Recomendations = 2131427389;
+			public const int Profile = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int select_dialog_item_material = 2131427390;
+			public const int Recomendations = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int select_dialog_multichoice_material = 2131427391;
+			public const int select_dialog_item_material = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int select_dialog_singlechoice_material = 2131427392;
+			public const int select_dialog_multichoice_material = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int ShareRecipeLayout = 2131427393;
+			public const int select_dialog_singlechoice_material = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int SingInLayout = 2131427394;
+			public const int ShareRecipeLayout = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int SingUpLayout = 2131427395;
+			public const int SingInLayout = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int support_simple_spinner_dropdown_item = 2131427396;
+			public const int SingUpLayout = 2131427396;
+			
+			// aapt resource value: 0x7F0B0045
+			public const int support_simple_spinner_dropdown_item = 2131427397;
 			
 			static Layout()
 			{

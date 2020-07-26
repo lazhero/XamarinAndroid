@@ -12,8 +12,8 @@ namespace CookTime
     [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_main", Theme = "@style/AppTheme", MainLauncher = true )]
     public class SingInActivity : AppCompatActivity
     {
+        
         public static string UserName;
-
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,14 +39,11 @@ namespace CookTime
             EditText txt_userName = FindViewById<EditText>(Resource.Id.txtName);
             EditText txt_password = FindViewById<EditText>(Resource.Id.txtPassword);
 
+            UserName = txt_userName.Text;
+
             API api = new API();
             string xd = api.connect("proving", txt_userName.Text, txt_password.Text);
-            Console.WriteLine(txt_userName);
-
-
-            
-            Console.WriteLine(xd.Length);
-
+           
             if (xd.Equals(""))
                 return false;
             else
@@ -56,28 +53,29 @@ namespace CookTime
 
         private void ButtonSingUp_Click(object sender, System.EventArgs e)
         {
-             var intent = new Intent(this, typeof(SingUpActivity));
-             StartActivity(intent);
-             Finish();
+            var intent = new Intent(this, typeof(SingUpActivity));
+            StartActivity(intent);
+            Finish();
         }
 
         private void ButtonSingIn_Click(object sender, System.EventArgs e)
         {
-            Console.WriteLine("Afuera del if");
-            if (verification() )
+            if (verification())
             {
-                Console.WriteLine("entro al if");
+                
                 var intent = new Intent(this, typeof(InitActivity));
+                intent.PutExtra("UserName", UserName);
                 StartActivity(intent);
                 Finish();
             } 
             else
             {
-                Console.WriteLine("Entro al else");
             }
 
 
         }
+
+
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

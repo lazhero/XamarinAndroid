@@ -71,7 +71,7 @@
         android:text="Create Company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttoncreatecompany" />
+        android:id="@+id/btn_createCompany" />
 
 
 </LinearLayout>

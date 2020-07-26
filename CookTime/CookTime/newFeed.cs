@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace CookTime
 {
@@ -28,27 +30,44 @@ namespace CookTime
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
             SetActionBar(toolbar);
 
+            // User name traido desde log in
+            String userName = Intent.Extras.GetString("UserName");
+
+
+            API newsfeedAPI = new API();
+            string jsonRecipes = newsfeedAPI.connect("NewsFed", userName);
+
+            List<Recipe> recipes = JsonConvert.DeserializeObject<List<Recipe>>(jsonRecipes);//Toma el json y lo transforma a objetos y crea una lista de objetos recetas.
+
+
             list_posts = FindViewById<ListView>(Resource.Id.list_posts);
-            List<string> xd = new List<string>();
-            xd.Add("Elote");
-            xd.Add("Papa");
-            xd.Add("Yuca");
+            List<string> list_recipe = new List<string>();// Lista vacia con el fin de llenarla con el nombre de cada receta.
 
-            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, xd);
-            list_posts.Adapter = adapter;
+            foreach (var recipe in recipes)
+                list_recipe.Add(recipe.RecipeName);//Se agrega el nombre de cada receta a la lista vacia List_recipe
 
-            list_posts.ItemClick += (s, e) =>
+
+
+            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, list_recipe);// Adapta la informacion y la deja apta para un list view
+            list_posts.Adapter = adapter;// Mete la info al list view
+
+            list_posts.ItemClick += (s, e) => // lo que sucede al darle click a cada elemento del list view
             {
-                toPost();
+                toPost(e.Position);// llamamos a toPost y le enviamos la posicion del nombre de la receta que se dio click
             };
 
 
-            // Create your application here
         }
 
-        private void toPost()
+        private void toPost(int RecipePosition)
         {
+            String userName = Intent.Extras.GetString("UserName");
 
+            Intent intent = new Intent(this, typeof(PostActivity));
+            intent.PutExtra("RecipePosition", RecipePosition);// se envia la posicion del nombre de la receta a la siguiente actividad
+            intent.PutExtra("UserName", userName);
+            StartActivity(intent);
+            Finish();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

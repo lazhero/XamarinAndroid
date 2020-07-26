@@ -28,7 +28,11 @@ namespace CookTime
 
         private void ButtonInit_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(newFeed));
+           
+            String userName = Intent.Extras.GetString("UserName");
+            var intent = new Intent(this, typeof(newFeed));
+            intent.PutExtra("UserName",userName);
+            StartActivity(intent);
         }
     }
 }
